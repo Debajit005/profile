@@ -1,0 +1,106 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+#progressBar{
+    background-color: white;
+    animation-name: progress;
+    animation-duration: 5s;
+}
+@keyframes progress{
+    0%{
+        width:0;
+        height: 3px;
+    }
+    50%{
+        width:70vw;
+    }
+    100%{
+        width:100vw;
+        height: 3px;
+    }
+}
+
+
+.flex{
+    display: flex;
+}
+#left{
+    float: left;
+}
+#right{
+    float: right;
+}
+nav{
+    width:100vw;
+    border-bottom: 1px solid white;
+    overflow: hidden;
+    font-size: 3vw;
+}
+nav, ul li, ul li a{
+    color:white;
+    text-decoration: none;
+    list-style: none;
+    margin: 1vw;
+}
+#logo{
+    height: 6vw;
+    width: 6vw;
+    margin: 0 1vw;
+    border-radius: 15vw;
+}
+
+main{
+    height: 120vw;
+    width: 100vw;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+input{
+    height: 4vw;
+    width: 50vw;
+    font-size: 3vw;
+    border-radius: 1vw;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1px solid white;
+    color: white;
+}
+button{
+    width: 15vw;
+    height: 5vw;
+    background-color: blue;
+    color: white;
+    font-size: 2vw;
+    margin: 3vw;
+}
+section{
+    height: 50vw;
+    width: 100vw;
+    color: white;
+    border: 1px solid white;
+    margin-top: 5vw;
+    background-image: url("https://img.pikbest.com/ai/illus_our/20230421/13d093bda5bc43c6ff2fb1c0733f2cee.jpg!f305cw");
+    background-size: cover;
+    font-size: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    justify-items: stretch;
+}
+#logIn{
+    font-size: 2vw;
+    display: flex;
+}
+#logIn a{
+    font-size: 2.5vw;
+    color: aqua;
+}
+
+

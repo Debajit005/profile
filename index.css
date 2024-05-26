@@ -1,0 +1,119 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    height: 200vw;
+}
+#progressBar{
+    background-color: aqua;
+    animation-name: progress;
+    animation-duration: 4s;
+}
+@keyframes progress{
+    0%{
+        width:0;
+        height: 3px;
+    }
+    50%{
+        width:70vw;
+    }
+    100%{
+        width:100vw;
+        height: 3px;
+    }
+}
+
+header{
+    height: auto;
+    overflow: hidden;
+}
+.flex{
+    display: flex;
+}
+#left{
+    float: left;
+}
+#right{
+    float: right;
+}
+nav{
+    width:100vw;
+    border-bottom: 1px solid white;
+    overflow: hidden;
+    font-size: 3vw;
+}
+nav, ul li, ul li a{
+    color:white;
+    text-decoration: none;
+    list-style: none;
+    margin: 1vw;
+}
+#logo{
+    height: 6vw;
+    width: 6vw;
+    border-radius: 15vw;
+    margin: 0 2vw;
+}
+
+#slider{
+    width: 96vw;
+    overflow: hidden;
+    display: flex;
+    margin: 2vw;
+}
+.sImg{
+    height: 50vw;
+    width:90vw;
+    margin: 5vw;
+    
+    transform: translateX(-400vw);
+    animation-name: slider1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+@keyframes slider1{
+    0%{
+    transform: translateX(-300vw);
+    }
+    100%{
+        transform: translateX(0vw);
+    }
+}
+
+#introImg img{
+    height: 15vw;
+    width: 15vw;
+    border: 1px solid white;
+    border-radius: 3vw;
+    position: absolute;
+    top: 33vw;
+    left: 42.5vw;
+}
+
+
+main{
+    color: white;
+    font-size: 4vw;
+}
+article{
+    width : 98vw;
+    height: 100vh;
+    display: grid;
+    margin: auto;
+    border: 1px solid white;
+}
+footer{
+    color: whitesmoke;
+    border-top: 1px solid white;
+    margin-top: 20vw;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+}
